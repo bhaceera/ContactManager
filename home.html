@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+            <!-- navbar -->
+        
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid" style="padding-bottom:10px">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="#">
+                                    <img style=" width: 200px" alt="Brand" src="img/logo.png">
+                                </a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#" data-toggle="modal" data-target="#myModal">ADD CONTACT</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Trash</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Log Out</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+            </nav>
+
+            <!-- modal -->
+
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                          <h4 class="modal-title">ADD NEW CONTACT</h4>
+                        </div>
+                        <div class="modal-body">
+                                <form class="form-horizontal">
+                                    <div class="form-group">
+                                        <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                                        <div class="col-sm-10">
+                                        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                                        <div class="col-sm-10">
+                                            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                            <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                                            <div class="col-sm-10">
+                                                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                                            </div>
+                                   </div>
+                                   <div class="form-group">
+                                        <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                                        <div class="col-sm-10">
+                                            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                            <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                                            <div class="col-sm-10">
+                                                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                                            </div>
+                                    </div>
+                                    <div class="form-group">
+                                            <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                                            <div class="col-sm-10">
+                                                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                                            </div>
+                                   </div>
+                               </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                          <button type="button" class="btn btn-primary">Save</button>
+                        </div>
+                      </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+           </div><!-- /.modal -->
+
+        
+           
+          <!-- search -->
+        <form class="navbar-form navbar-center">
+            <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="button" class="btn btn-default" aria-label="Left Align">
+                <span class="glyphicon glyphicon-search	" aria-hidden="true"></span>
+              </button>
+        </form> <br>
+        <!-- Table -->
+        <table class="table table-bordered" style= "width:94%; margin-left: 3%">
+                <tr>
+                    <th>S/N</th>
+                    <th>Firstname</th>
+                    <th>Lastname</th> 
+                    <th>Role</th>
+                    <th>Phone Number</th>
+                    <th>Email </th>
+                    <th>Age</th>
+                    <th style="background-color:darkred">Options</th>
+                    
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Jill</td>
+                    <td>Smith</td> 
+                    <td>Engineer</td>
+                    <td>08046337254</td>
+                    <td>jill@gmail.com</td>
+                    <td>50</td>
+                    <td>
+                        <button type="button" class="btn btn-default" aria-label="Left Align">
+                        <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+                      </button>
+                      <button type="button" class="btn btn-default" aria-label="Left Align">
+                            <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                          </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Eve</td>
+                    <td>Jackson</td> 
+                    <td>Business Analyst</td>
+                    <td>07064573574</td>
+                    <td>eve@yahoo.com</td>
+                    <td>50</td>
+                    <td>
+                            <button type="button" class="btn btn-default" aria-label="Left Align">
+                            <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+                          </button>
+                          <button type="button" class="btn btn-default" aria-label="Left Align">
+                                <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                              </button>
+                    </td>
+                </tr>
+                <tr>
+                        <td>1</td>
+                        <td>Eve</td>
+                        <td>Jackson</td> 
+                        <td>Data Analyst</td>
+                        <td>09074576478</td>
+                        <td>etyrg@hjgyu.com</td>
+                        <td>94</td>
+                        <td>
+                                <button type="button" class="btn btn-default" aria-label="Left Align">
+                                <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+                              </button>
+                              <button type="button" class="btn btn-default" aria-label="Left Align">
+                                    <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                                  </button>
+                        </td>
+                </tr>
+                <tr>
+                        <td>1</td>
+                        <td>Jackson</td> 
+                        <td>94</td>
+                        <td>94</td>
+                        <td>94</td>
+                        <td>94</td>
+                        <td>94</td>
+                        <td>
+                                <button type="button" class="btn btn-default" aria-label="Left Align">
+                                <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+                              </button>
+                              <button type="button" class="btn btn-default" aria-label="Left Align">
+                                    <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                                  </button>
+                        </td>
+                </tr>
+                <tr> 
+                        <td>1</td>
+                        <td>Eve</td>
+                        <td>Jackson</td> 
+                        <td>94</td>
+                        <td>94</td>
+                        <td>94</td>
+                        <td>94</td>
+                        <td>
+                                <button type="button" class="btn btn-default" aria-label="Left Align">
+                                <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+                              </button>
+                              <button type="button" class="btn btn-default" aria-label="Left Align">
+                                    <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                                  </button>
+                       </td>
+                </tr>
+        </table>
+    </div>  
+    
+
+    
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
